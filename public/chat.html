@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <section id="messages" class="messages-container">
+      <h1>Chat</h1>
+    </section>
+    <aside id="users" class="users-container"></aside>
+    <footer id="chat-footer" class="chat-footer">
+      <form class="send-msg-form" id="send-msg-form">
+        <input type="text" class="text-input chat-footer__input" name="user-massage" id="send-msg-input" autocomplete="off" required>
+        <button class="btn chat-footer__btn" id="send-msg-btn">Send message</button>
+      </form>
+      <button class="btn chat-footer__btn" id="share-location">Share location</button>
+    </footer>
+  </main>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/chat.js"></script>
+</body>
+</html>
